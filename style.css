@@ -1,0 +1,337 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body
+{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar
+{
+display:flex;
+background-color: rgba(0, 0, 0, 0.8);
+padding-right: 60px;
+border-radius: 5px;
+justify-content: space-between;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+.navbar h1
+{
+    padding: 20px 70px;
+    font-family: segoe ui light;
+    font-size: 24px;
+    color: #934839;
+    justify-content: flex-start;
+}
+
+.navbar ul
+{
+    display: flex;
+}
+.navbar ul li
+{
+    text-align: center;
+    list-style-type: none;
+
+}
+.navbar ul li a
+{
+    padding: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+}
+.navbar ul li .special-a
+{
+    color: #934839;
+} 
+
+.navbar ul li .all-a
+{
+    transition: color 0.8s;
+}
+.navbar ul li .all-a:hover
+{
+ color: #934839;
+}
+/* .spec-a
+{
+
+}
+
+.spec-a:hover
+{
+    
+
+} */
+
+@media screen and (max-width:992px) 
+{ 
+    .navbar
+    {
+        flex-direction:column ;
+        text-align: center  ;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navbar h1
+    {
+        padding-left: 110px;
+    }
+   
+    .navbar ul
+    {
+        flex-direction:column ;
+    }
+    .navbar ul li
+    {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:778px) 
+{ 
+    .navbar
+    {
+        flex-direction:column ;
+        text-align: center  ;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navbar h1
+    {
+        padding-left: 110px;
+    }
+   
+    .navbar ul
+    {
+        flex-direction:column ;
+    }
+    .navbar ul li
+    {
+        padding: 10px;
+    }
+    .section-projects
+    {
+        height: 50vh;
+    }
+    .section-projects img
+    {
+        width: 25%;
+    }
+    .content-section
+    {
+        height: 25vh;
+    }
+  .home-page
+  {
+    overflow: auto;
+  }
+    .home-page p
+    {
+        padding: 10px;
+    }
+}
+
+.home-page
+{
+    padding-top: 40px;
+    height: 100vh;
+    background: linear-gradient(black ,#fff );
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.home-page p
+{
+    justify-self: center;  
+    width: 50%;
+    border: 2px solid #934839;
+    padding: 30px;
+    font-size: 20px;
+}
+.home-page h2
+{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.home-page h3
+{
+    padding-bottom: 30px;
+
+}
+.home-page h3::after
+{
+    content: " |";
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{content: " |";}
+    5%{content: "D|";}
+    10%{content: "De|";}
+    15%{content: "Des|";}
+    20%{content: "Desi|";}
+    25%{content: "Desig|";}
+    30%{content: "Design|";}
+    35%{content: "Designe|";}
+    40%{content: "Designer|";}
+    45%{content: "Designe|";}
+    50%{content: "Design|";}
+    55%{content: "Desig|";}
+    60%{content: "Desi|";}
+    65%{content: "Des|";}
+    70%{content: "De|";}
+    75%{content: "D|";}
+    80%{content: "|";}
+    
+
+}
+.home-page img
+{
+    padding-top: 60px;
+    width: 25%;
+    justify-self: center;
+    border-radius: 40%     ;
+    height: 250px;
+}
+
+.section-projects
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+.section-projects .project
+{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) ;
+}
+.section-projects img
+{
+    width: 100%;
+    border-radius: 10%;
+    padding: 30px;
+}
+.section-projects h3
+{
+    padding: 10px;
+}
+.section-projects p
+{
+    border:1px solid #934839 ;
+    padding: 5px;
+    margin:0px 15px;
+    font-size: 20px;
+}
+.section-projects button
+{
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    transition: color 0.8s , border 1s , background-color 1s;
+    font-weight: 600;
+    border-radius: 30%;
+
+}
+.section-projects button:hover
+{
+    color: #fff;
+    border: 2px black solid;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.section-projects button a
+{
+    text-decoration: none;
+    color: black;
+    transition: color 0.8s , ;
+}
+.section-projects button a:hover
+{
+    color: blue;
+}
+.content-section
+{
+overflow: auto;
+
+}
+ .content-section h2
+ {
+    padding-left: 20px;
+ }
+.content-section a
+{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 50px;
+    margin: 17px;
+    color: black;
+    transition: 0.5;
+}
+.content-section a:hover
+{
+    color: blue;
+}
+.content-section button
+{
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    border: 3px solid #934839;
+    transition: color 0.8s , background-color 0.8s;
+}
+.content-section button:hover
+{
+    color: #934839;
+    border: 3px solid red;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* .content-section button
+{
+    color: #934839;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    border: none;
+    border-radius: 30%;
+    padding: 15px;
+    transition: color 0.8s , border 1s , background-color 1s;
+    font-weight: 600;
+    font-size: 18px;
+    align-self: flex-start;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 18;
+
+}
+.content-section button:hover
+{
+    color: #934839;
+    border: 2px black solid;
+    background-color: rgba(0, 0, 0, 0.8)
+
+} */
+
+/* @keyframes appear {
+    0%{background-color: transparent;}
+    50%{background-color: rgba(0, 0, 0, 0.6);}
+    100%{background-color: rgba(0, 0, 0, 0.8);}
+}   */
