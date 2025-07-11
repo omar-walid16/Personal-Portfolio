@@ -71,7 +71,7 @@ right: 0;
 
 .spec-a:hover
 {
-    
+
 
 } */
 
@@ -134,6 +134,7 @@ right: 0;
   .home-page
   {
     overflow: auto;
+    height: auto ; 
   }
     .home-page p
     {
